@@ -1,3 +1,7 @@
+window.onload = function () {
+    openTab('about');
+};
+
 function openTab(tabName) {
     let tabs = document.getElementsByClassName("tab-content");
 
@@ -7,6 +11,3 @@ function openTab(tabName) {
 
     document.getElementById(tabName).style.display = "block";
 }
-
-// Default open
-document.getElementById("about").style.display = "block";
