@@ -9,6 +9,7 @@ body {
 /* Title */
 .title {
     margin-top: 20px;
+    font-size: 28px;
 }
 
 /* Tabs */
@@ -54,7 +55,7 @@ body {
     box-shadow: 0 0 20px #38bdf8;
 }
 
-/* Skills layout */
+/* Skills cards */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -77,4 +78,21 @@ body {
 
 .image-grid img:hover {
     transform: scale(1.05);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
 }
