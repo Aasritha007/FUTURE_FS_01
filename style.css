@@ -1,107 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Segoe UI';
+    font-family: Arial;
     background: #0f172a;
     color: white;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background: #020617;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav a {
-    color: #cbd5f5;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-/* HERO */
-.hero {
     text-align: center;
-    padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 42px;
+/* Title */
+.title {
+    margin-top: 20px;
 }
 
-.hero p {
-    margin: 15px 0;
+/* Tabs */
+.tabs {
+    margin: 20px;
 }
 
-/* BUTTON */
-.btn {
-    background: #38bdf8;
+.tabs button {
     padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
+    margin: 5px;
+    border: none;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tabs button:hover {
+    background: #38bdf8;
     color: black;
-    font-weight: bold;
 }
 
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* SKILLS */
-.skills {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.skills div {
-    background: #1e293b;
-    padding: 10px 15px;
-    border-radius: 6px;
-}
-
-/* PROJECTS */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* FOOTER */
-.internship {
-    background: #020617;
+/* Content */
+.tab-content {
+    display: none;
     padding: 20px;
+}
+
+/* Images */
+img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
 }
