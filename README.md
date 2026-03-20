@@ -2,9 +2,10 @@
 Full Stack Web Development Internship Task 1
 # Jerripothula Aasritha Portfolio
 This is my personal portfolio website built using HTML, CSS, and JavaScript.
-It includes:
+Features:
 - About Me
-- Skills
-- Projects (Python Calculator)
-- Contact Information
-This project is developed as part of my internship task.
+- Skills (Card UI)
+- Project (Python Calculator)
+- Contact
+- Resume Download
+This project is developed as part of my internship.
