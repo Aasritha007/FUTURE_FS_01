@@ -1,6 +1,11 @@
-body {
+* {
     margin: 0;
-    font-family: Arial;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI';
     background: #0f172a;
     color: white;
 }
@@ -9,7 +14,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 40px;
     background: #020617;
 }
 
@@ -20,8 +25,12 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #cbd5f5;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
 }
 
 /* HERO */
@@ -31,46 +40,68 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 42px;
+}
+
+.hero p {
+    margin: 15px 0;
 }
 
 /* BUTTON */
 .btn {
     background: #38bdf8;
     padding: 10px 20px;
-    color: black;
     border-radius: 8px;
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /* SECTIONS */
 section {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 /* SKILLS */
-.skills-box span {
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills div {
     background: #1e293b;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 8px;
+    padding: 10px 15px;
+    border-radius: 6px;
 }
 
 /* PROJECTS */
-.project-container {
+.projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.project-container img {
-    width: 100%;
+.card {
+    background: #1e293b;
+    padding: 10px;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-.project-container img:hover {
-    transform: scale(1.05);
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+.internship {
+    background: #020617;
+    padding: 20px;
 }
