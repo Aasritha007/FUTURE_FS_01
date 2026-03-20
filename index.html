@@ -11,7 +11,7 @@
 
 <!-- TABS -->
 <div class="tabs">
-    <button onclick="openTab('about')">About Me</button>
+    <button onclick="openTab('about')">About</button>
     <button onclick="openTab('skills')">Skills</button>
     <button onclick="openTab('project')">Project</button>
     <button onclick="openTab('contact')">Contact</button>
@@ -19,36 +19,62 @@
 
 <!-- ABOUT -->
 <div id="about" class="tab-content">
-    <h2>About Me</h2>
-    <p>I am a 2nd year ECE student studying in Gayatri Vidya Parishad College of Engineering for Women.</p>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a 2nd year ECE student studying in Gayatri Vidya Parishad College of Engineering for Women.
+            I am passionate about programming and AI.
+        </p>
+    </div>
 </div>
 
 <!-- SKILLS -->
 <div id="skills" class="tab-content">
-    <h2>Skills</h2>
-    <ul>
-        <li>C Programming</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>AI Basics</li>
-    </ul>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>C Programming</h3>
+            <p>Core programming language</p>
+        </div>
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>Used for projects</p>
+        </div>
+
+        <div class="card">
+            <h3>Java</h3>
+            <p>Basic OOP concepts</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Basics</h3>
+            <p>Intro to AI</p>
+        </div>
+
+    </div>
 </div>
 
 <!-- PROJECT -->
 <div id="project" class="tab-content">
-    <h2>Project</h2>
-    <p><b>Simple Calculator in Python</b></p>
+    <div class="card">
+        <h2>Simple Calculator in Python</h2>
 
-    <img src="images/SimpleCalculator1.PNG">
-    <img src="images/SimpleCalculator2.PNG">
-    <img src="images/SimpleCalculator3.PNG">
-    <img src="images/SimpleCalculator4.PNG">
+        <div class="image-grid">
+            <img src="images/SimpleCalculator1.PNG">
+            <img src="images/SimpleCalculator2.PNG">
+            <img src="images/SimpleCalculator3.PNG">
+            <img src="images/SimpleCalculator4.PNG">
+        </div>
+    </div>
 </div>
 
 <!-- CONTACT -->
 <div id="contact" class="tab-content">
-    <h2>Contact</h2>
-    <p>Email: aasrithajerripothula7@gmail.com</p>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: aasrithajerripothula7@gmail.com</p>
+    </div>
 </div>
 
 <script src="script.js"></script>
