@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #0f172a;
+    font-family: Arial;
+    background: #020617;
     color: white;
     text-align: center;
 }
@@ -22,7 +22,8 @@ body {
     background: #1e293b;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .tabs button:hover {
@@ -36,9 +37,43 @@ body {
     padding: 20px;
 }
 
+/* Cards */
+.card {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* Skills cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 /* Images */
-img {
-    width: 200px;
-    margin: 10px;
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
 }
