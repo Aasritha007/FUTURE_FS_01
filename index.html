@@ -3,93 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerripothula Aasritha</title>
+    <title>Aasritha Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1 class="title">Jerripothula Aasritha</h1>
+<header>
+    <h1>Aasritha Jerripothula</h1>
+    <p>Full Stack Developer | AI Enthusiast</p>
+</header>
 
-<!-- TABS -->
-<div class="tabs">
-    <button onclick="openTab('about')">About</button>
-    <button onclick="openTab('skills')">Skills</button>
-    <button onclick="openTab('project')">Project</button>
-    <button onclick="openTab('contact')">Contact</button>
-    <button onclick="openTab('resume')">Resume</button>
-</div>
+<section class="cards">
 
-<!-- ABOUT -->
-<div id="about" class="tab-content">
     <div class="card">
-        <h2>About Me</h2>
-        <p>
-            I am a 2nd year ECE student studying in Gayatri Vidya Parishad College of Engineering for Women.
-            Passionate about programming and Artificial Intelligence.
-        </p>
+        <div class="card-inner">
+            <div class="card-front">About Me</div>
+            <div class="card-back">
+                I am a passionate developer skilled in C, Python, Java and AI basics.  
+                I enjoy building creative and user-friendly projects.
+            </div>
+        </div>
     </div>
-</div>
 
-<!-- SKILLS -->
-<div id="skills" class="tab-content">
-    <div class="card-container">
-
-        <div class="card">
-            <h3>C Programming</h3>
-            <p>Core programming language</p>
-        </div>
-
-        <div class="card">
-            <h3>Python</h3>
-            <p>Used for real-world projects</p>
-        </div>
-
-        <div class="card">
-            <h3>Java</h3>
-            <p>Basic OOP concepts</p>
-        </div>
-
-        <div class="card">
-            <h3>AI Basics</h3>
-            <p>Introduction to AI</p>
-        </div>
-
-    </div>
-</div>
-
-<!-- PROJECT -->
-<div id="project" class="tab-content">
     <div class="card">
-        <h2>Simple Calculator in Python</h2>
-
-        <div class="image-grid">
-            <img src="images/SimpleCalculator1.PNG">
-            <img src="images/SimpleCalculator2.PNG">
-            <img src="images/SimpleCalculator3.PNG">
-            <img src="images/SimpleCalculator4.PNG">
+        <div class="card-inner">
+            <div class="card-front">Skills</div>
+            <div class="card-back">
+                C<br>Python<br>Java<br>HTML<br>CSS<br>JavaScript<br>AI Basics
+            </div>
         </div>
     </div>
-</div>
 
-<!-- CONTACT -->
-<div id="contact" class="tab-content">
     <div class="card">
-        <h2>Contact</h2>
-        <p>Email: aasrithajerripothula7@gmail.com</p>
+        <div class="card-inner">
+            <div class="card-front">Projects</div>
+            <div class="card-back">
+                🔹 Simple Calculator (Python)<br>
+                🔹 Portfolio Website<br>
+                🔹 Traffic Signal Control Project
+            </div>
+        </div>
     </div>
-</div>
 
-<!-- RESUME -->
-<div id="resume" class="tab-content">
     <div class="card">
-        <h2>Resume</h2>
-        <p>Download my resume:</p>
-
-        <a href="resume.pdf" download class="btn">Download Resume</a>
+        <div class="card-inner">
+            <div class="card-front">Resume</div>
+            <div class="card-back">
+                <a href="resume.pdf" target="_blank">View Resume</a>
+            </div>
+        </div>
     </div>
-</div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Contact</div>
+            <div class="card-back">
+                Email: yourmail@gmail.com<br>
+                LinkedIn: linkedin.com/in/yourprofile
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
