@@ -5,7 +5,7 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript.
 Features:
 - About Me
 - Skills (Card UI)
-- Project (Python Calculator)
+- Projects
 - Contact
 - Resume Download
 
