@@ -1,98 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #020617;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
     color: white;
     text-align: center;
-    margin: 0;
 }
 
-/* Title */
-.title {
-    margin-top: 20px;
-    font-size: 28px;
+header {
+    padding: 30px;
 }
 
-/* Tabs */
-.tabs {
-    margin: 20px;
+h1 {
+    font-size: 2.5rem;
 }
 
-.tabs button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    background: #1e293b;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.tabs button:hover {
-    background: #38bdf8;
-    color: black;
-}
-
-/* Content */
-.tab-content {
-    display: none;
-    padding: 20px;
-}
-
-/* Cards */
-.card {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    padding: 25px;
-    border-radius: 15px;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #38bdf8;
-}
-
-/* Skills cards */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Images */
-.image-grid {
+.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px;
 }
 
-.image-grid img {
+/* Flash Card Style */
+.card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
     width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
+    height: 200px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
 }
 
-.image-grid img:hover {
-    transform: scale(1.05);
+.card:hover .card-inner {
+    transform: rotateY(180deg);
 }
 
-/* Button */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    font-size: 1.3rem;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #0ea5e9;
+.card-back {
+    background: #1e293b;
+    transform: rotateY(180deg);
+    font-size: 0.95rem;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
 }
