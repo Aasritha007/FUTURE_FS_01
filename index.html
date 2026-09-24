@@ -1,1454 +1,206 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Jerripothula Aasritha - Personal Portfolio"
-    >
-
-    <meta
-        name="author"
-        content="Jerripothula Aasritha"
-    >
-
-    <title>Jerripothula Aasritha | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jerripothula Aasritha — student, developer and creative thinker.">
+  <title>Jerripothula Aasritha | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
-
 <body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">JA<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-contact">Contact Me</a>
+      </div>
+    </nav>
+  </header>
 
-
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
-    <header class="navbar">
-
-        <div class="nav-container">
-
-            <a href="#home" class="brand">
-
-                <span class="brand-box">
-                    JA
-                </span>
-
-                <span class="brand-name">
-                    Aasritha
-                </span>
-
-            </a>
-
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-
-            <nav class="nav-links" id="navLinks">
-
-                <a href="#home" class="nav-link active">
-                    Home
-                </a>
-
-                <a href="#about" class="nav-link">
-                    About
-                </a>
-
-                <a href="#experience" class="nav-link">
-                    Experience
-                </a>
-
-                <a href="#projects" class="nav-link">
-                    Projects
-                </a>
-
-                <a href="#skills" class="nav-link">
-                    Skills
-                </a>
-
-                <a href="#education" class="nav-link">
-                    Education
-                </a>
-
-                <a href="#contact" class="nav-link">
-                    Contact
-                </a>
-
-            </nav>
-
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="availability"><span></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <h1>Hi, I'm <span>Jerripothula<br>Aasritha.</span></h1>
+          <h2>Student <span class="dot">•</span> Developer <span class="dot">•</span> Creative Thinker</h2>
+          <p class="hero-description">
+            A curious and motivated engineering student who enjoys turning
+            ideas into practical projects, learning new technologies and
+            creating meaningful digital experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Work <span>↗</span></a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>2028</strong><span>Graduation</span></div>
+            <div><strong>3+</strong><span>Web Projects</span></div>
+            <div><strong>3</strong><span>Internships</span></div>
+          </div>
         </div>
-
-    </header>
-
-
-
-    <!-- =========================
-         HERO
-    ========================== -->
-
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-container">
-
-
-                <div class="hero-content reveal">
-
-                    <div class="availability">
-
-                        <span class="availability-dot"></span>
-
-                        AVAILABLE FOR OPPORTUNITIES
-
-                    </div>
-
-
-                    <p class="hero-intro">
-                        HELLO, I'M
-                    </p>
-
-
-                    <h1>
-
-                        Jerripothula
-
-                        <span>
-                            Aasritha
-                        </span>
-
-                    </h1>
-
-
-                    <div class="hero-title">
-
-                        <span id="typingText"></span>
-
-                        <span class="typing-cursor">
-                            |
-                        </span>
-
-                    </div>
-
-
-                    <p class="hero-description">
-
-                        B.Tech Electronics & Communication Engineering
-                        undergraduate passionate about technology,
-                        creative problem solving and building practical
-                        projects that turn ideas into meaningful results.
-
-                    </p>
-
-
-                    <div class="hero-actions">
-
-                        <a
-                            href="#projects"
-                            class="btn btn-primary"
-                        >
-                            Explore My Work
-                            <span>→</span>
-                        </a>
-
-
-                        <a
-                            href="#contact"
-                            class="btn btn-outline"
-                        >
-                            Get In Touch
-                        </a>
-
-                    </div>
-
-
-                    <div class="hero-stats">
-
-
-                        <div class="hero-stat">
-
-                            <strong
-                                class="counter"
-                                data-target="2028"
-                            >
-                                0
-                            </strong>
-
-                            <span>
-                                Graduation
-                            </span>
-
-                        </div>
-
-
-                        <div class="stat-divider"></div>
-
-
-                        <div class="hero-stat">
-
-                            <strong>
-                                7/10
-                            </strong>
-
-                            <span>
-                                Overall CGPA
-                            </span>
-
-                        </div>
-
-
-                        <div class="stat-divider"></div>
-
-
-                        <div class="hero-stat">
-
-                            <strong>
-                                ECE
-                            </strong>
-
-                            <span>
-                                Engineering
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- HERO PHOTO -->
-
-                <div class="hero-visual reveal">
-
-                    <div class="photo-shadow"></div>
-
-                    <div class="photo-decoration photo-decoration-one"></div>
-
-                    <div class="photo-decoration photo-decoration-two"></div>
-
-
-                    <div class="portrait-card">
-
-                        <div class="portrait-top">
-
-                            <span>
-                                PORTFOLIO
-                            </span>
-
-                            <span>
-                                2026
-                            </span>
-
-                        </div>
-
-
-                        <div class="portrait-image">
-
-                            <img
-                                src="resume photo.jpeg"
-                                alt="Jerripothula Aasritha"
-                            >
-
-                        </div>
-
-
-                        <div class="portrait-bottom">
-
-                            <div>
-
-                                <strong>
-                                    JERRIPOTHULA AASRITHA
-                                </strong>
-
-                                <span>
-                                    Student • Developer • Learner
-                                </span>
-
-                            </div>
-
-                            <div class="portrait-mark">
-                                JA
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section
-            class="section"
-            id="about"
-        >
-
-            <div class="section-container">
-
-
-                <div class="section-heading reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            01 — ABOUT ME
-                        </span>
-
-                        <h2>
-                            A little about<br>
-                            who I am.
-                        </h2>
-
-                    </div>
-
-
-                    <p>
-
-                        A curious learner with an interest in
-                        technology, development and creating
-                        useful solutions.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="about-layout">
-
-
-                    <div class="about-main reveal">
-
-                        <span class="about-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Learning. Building. Growing.
-                        </h3>
-
-                        <p>
-
-                            I am a B.Tech Electronics &
-                            Communication Engineering student at
-                            Gayatri Vidya Parishad College of
-                            Engineering for Women, Visakhapatnam.
-
-                        </p>
-
-                        <p>
-
-                            My experience includes digital circuit
-                            design, FPGA implementation, embedded
-                            systems and web development through
-                            internships and projects.
-
-                        </p>
-
-                        <p>
-
-                            I enjoy learning new technologies,
-                            experimenting with ideas and developing
-                            projects that help me strengthen both
-                            my technical and creative skills.
-
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="about-side reveal">
-
-                        <div class="info-card">
-
-                            <span class="info-icon">
-                                01
-                            </span>
-
-                            <div>
-
-                                <h3>
-                                    Problem Solver
-                                </h3>
-
-                                <p>
-                                    I enjoy understanding problems
-                                    and finding practical solutions.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="info-card">
-
-                            <span class="info-icon">
-                                02
-                            </span>
-
-                            <div>
-
-                                <h3>
-                                    Fast Learner
-                                </h3>
-
-                                <p>
-                                    Always exploring new concepts,
-                                    tools and technologies.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="info-card">
-
-                            <span class="info-icon">
-                                03
-                            </span>
-
-                            <div>
-
-                                <h3>
-                                    Creative Thinker
-                                </h3>
-
-                                <p>
-                                    I like combining technology with
-                                    clean and creative design.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-
-        <section
-            class="section section-soft"
-            id="experience"
-        >
-
-            <div class="section-container">
-
-
-                <div class="section-heading centered reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            02 — EXPERIENCE
-                        </span>
-
-                        <h2>
-                            My journey so far.
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="experience-wrapper">
-
-
-                    <div class="timeline-line"></div>
-
-
-                    <!-- EXPERIENCE 1 -->
-
-                    <article class="experience-item reveal">
-
-                        <div class="timeline-point">
-                            01
-                        </div>
-
-                        <div class="experience-card">
-
-                            <div class="experience-header">
-
-                                <div>
-
-                                    <span class="experience-type">
-                                        SUMMER INTERNSHIP
-                                    </span>
-
-                                    <h3>
-                                        Digital Circuit Design
-                                        & FPGA Implementation
-                                    </h3>
-
-                                </div>
-
-                                <span class="experience-number">
-                                    01
-                                </span>
-
-                            </div>
-
-                            <p>
-
-                                Worked on digital circuit design and
-                                FPGA implementation using Verilog and
-                                Xilinx Vivado. Developed and tested an
-                                FPGA-based ECG project.
-
-                            </p>
-
-                            <div class="tag-list">
-
-                                <span>Verilog</span>
-                                <span>Xilinx Vivado</span>
-                                <span>FPGA</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- EXPERIENCE 2 -->
-
-                    <article class="experience-item reveal">
-
-                        <div class="timeline-point">
-                            02
-                        </div>
-
-                        <div class="experience-card">
-
-                            <div class="experience-header">
-
-                                <div>
-
-                                    <span class="experience-type">
-                                        EMBEDDED SYSTEMS
-                                    </span>
-
-                                    <h3>
-                                        ExcelR EdTech Pvt. Ltd.
-                                    </h3>
-
-                                </div>
-
-                                <span class="experience-number">
-                                    02
-                                </span>
-
-                            </div>
-
-                            <p>
-
-                                Completed an online short-term
-                                internship in Embedded Systems in
-                                collaboration with APSCHE & AICTE.
-
-                            </p>
-
-                            <div class="tag-list">
-
-                                <span>Embedded Systems</span>
-                                <span>APSCHE</span>
-                                <span>AICTE</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- EXPERIENCE 3 -->
-
-                    <article class="experience-item reveal">
-
-                        <div class="timeline-point">
-                            03
-                        </div>
-
-                        <div class="experience-card">
-
-                            <div class="experience-header">
-
-                                <div>
-
-                                    <span class="experience-type">
-                                        FULL STACK DEVELOPMENT
-                                    </span>
-
-                                    <h3>
-                                        Future Interns
-                                    </h3>
-
-                                </div>
-
-                                <span class="experience-number">
-                                    03
-                                </span>
-
-                            </div>
-
-                            <p>
-
-                                Developed a personal portfolio,
-                                Mini CRM and local business website
-                                projects while learning HTML, CSS,
-                                JavaScript and Node.js.
-
-                            </p>
-
-                            <div class="tag-list">
-
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Node.js</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section
-            class="section"
-            id="projects"
-        >
-
-            <div class="section-container">
-
-
-                <div class="section-heading reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            03 — PROJECTS
-                        </span>
-
-                        <h2>
-                            Selected work.
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        A collection of academic,
-                        internship and personal projects.
-                    </p>
-
-                </div>
-
-
-
-                <div class="projects-grid">
-
-
-                    <!-- PROJECT 1 -->
-
-                    <article class="project-card featured reveal">
-
-                        <div class="project-number">
-                            01
-                        </div>
-
-                        <div class="project-category">
-                            FPGA PROJECT
-                        </div>
-
-                        <div class="project-symbol">
-                            ECG
-                        </div>
-
-                        <h3>
-                            FPGA-Based ECG
-                            Heart Rate Monitor
-                        </h3>
-
-                        <p>
-
-                            Developed an FPGA-based heart-rate
-                            monitoring system using Verilog HDL,
-                            Xilinx Vivado and Artix-7 with
-                            7-segment display output.
-
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>Verilog HDL</span>
-                            <span>Vivado</span>
-                            <span>Artix-7</span>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- PROJECT 2 -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-number">
-                            02
-                        </div>
-
-                        <div class="project-category">
-                            WEB DEVELOPMENT
-                        </div>
-
-                        <div class="project-symbol">
-                            WEB
-                        </div>
-
-                        <h3>
-                            Personal Portfolio
-                        </h3>
-
-                        <p>
-
-                            A responsive portfolio website designed
-                            to present my profile, skills, projects,
-                            education and professional experience.
-
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- PROJECT 3 -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-number">
-                            03
-                        </div>
-
-                        <div class="project-category">
-                            FULL STACK
-                        </div>
-
-                        <div class="project-symbol">
-                            CRM
-                        </div>
-
-                        <h3>
-                            Mini CRM
-                        </h3>
-
-                        <p>
-
-                            Client and lead management system created
-                            as part of the Future Interns Full Stack
-                            Web Development internship.
-
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-
-                        </div>
-
-                        <a
-                            href="https://aasritha007.github.io/FUTURE_FS_02/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-view"
-                        >
-                            View Project →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- PROJECT 4 -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-number">
-                            04
-                        </div>
-
-                        <div class="project-category">
-                            WEB DEVELOPMENT
-                        </div>
-
-                        <div class="project-symbol">
-                            FM
-                        </div>
-
-                        <h3>
-                            Fresh Mart
-                        </h3>
-
-                        <p>
-
-                            Local business website developed during
-                            the Future Interns internship with a
-                            focus on clean presentation and
-                            responsive design.
-
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-                        <a
-                            href="https://aasritha007.github.io/FUTURE_FS_03/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-view"
-                        >
-                            View Project →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section
-            class="section section-soft"
-            id="skills"
-        >
-
-            <div class="section-container">
-
-
-                <div class="section-heading centered reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            04 — SKILLS
-                        </span>
-
-                        <h2>
-                            What I work with.
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="skills-grid">
-
-
-                    <div class="skill-group reveal">
-
-                        <h3>
-                            Programming
-                        </h3>
-
-                        <div class="skill-items">
-
-                            <span>C Programming</span>
-                            <span>Python</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-group reveal">
-
-                        <h3>
-                            Development
-                        </h3>
-
-                        <div class="skill-items">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-group reveal">
-
-                        <h3>
-                            Technical
-                        </h3>
-
-                        <div class="skill-items">
-
-                            <span>Digital Electronics</span>
-                            <span>Analog Circuits</span>
-                            <span>CMOS & VLSI</span>
-                            <span>Verilog HDL</span>
-                            <span>FPGA</span>
-                            <span>Embedded Systems</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-group reveal">
-
-                        <h3>
-                            Tools
-                        </h3>
-
-                        <div class="skill-items">
-
-                            <span>Xilinx Vivado</span>
-                            <span>Cadence Virtuoso</span>
-                            <span>MATLAB</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             EDUCATION
-        ========================== -->
-
-        <section
-            class="section"
-            id="education"
-        >
-
-            <div class="section-container">
-
-
-                <div class="section-heading reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            05 — EDUCATION
-                        </span>
-
-                        <h2>
-                            Academic background.
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="education-grid">
-
-
-                    <div class="education-card education-main reveal">
-
-                        <span class="education-year">
-                            2024 — 2028
-                        </span>
-
-                        <h3>
-                            B.Tech — Electronics &
-                            Communication Engineering
-                        </h3>
-
-                        <p>
-
-                            Gayatri Vidya Parishad College of
-                            Engineering for Women, Visakhapatnam
-
-                        </p>
-
-                        <div class="education-score">
-
-                            <strong>
-                                7/10
-                            </strong>
-
-                            <span>
-                                Overall CGPA
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="education-card reveal">
-
-                        <span class="education-year">
-                            INTERMEDIATE
-                        </span>
-
-                        <h3>
-                            MPC
-                        </h3>
-
-                        <p>
-                            Deeksha Junior College
-                        </p>
-
-                        <div class="percentage">
-                            84.9%
-                        </div>
-
-                    </div>
-
-
-                    <div class="education-card reveal">
-
-                        <span class="education-year">
-                            SSC
-                        </span>
-
-                        <h3>
-                            School Education
-                        </h3>
-
-                        <p>
-                            Bhashyam High School
-                        </p>
-
-                        <div class="percentage">
-                            93.3%
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CERTIFICATIONS
-        ========================== -->
-
-        <section class="section">
-
-            <div class="section-container">
-
-
-                <div class="section-heading reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            06 — CERTIFICATIONS
-                        </span>
-
-                        <h2>
-                            Training & certifications.
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="certifications-grid">
-
-
-                    <div class="certificate reveal">
-                        <span>01</span>
-                        <h3>HCDA</h3>
-                        <p>Hedera</p>
-                    </div>
-
-
-                    <div class="certificate reveal">
-                        <span>02</span>
-                        <h3>HCF</h3>
-                        <p>The Hashgraph Association</p>
-                    </div>
-
-
-                    <div class="certificate reveal">
-                        <span>03</span>
-                        <h3>Embedded Systems Internship</h3>
-                        <p>ExcelR, APSCHE & AICTE</p>
-                    </div>
-
-
-                    <div class="certificate reveal">
-                        <span>04</span>
-                        <h3>Full Stack Web Development</h3>
-                        <p>Future Interns</p>
-                    </div>
-
-
-                    <div class="certificate reveal">
-                        <span>05</span>
-                        <h3>Digital Circuit Design & FPGA</h3>
-                        <p>DeFT Semi Conductors</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             ACTIVITIES
-        ========================== -->
-
-        <section class="section section-soft">
-
-            <div class="section-container">
-
-
-                <div class="section-heading reveal">
-
-                    <div>
-
-                        <span class="section-label">
-                            07 — ACTIVITIES
-                        </span>
-
-                        <h2>
-                            Achievements & activities.
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="activity-list">
-
-
-                    <div class="activity reveal">
-
-                        <span>01</span>
-
-                        <div>
-
-                            <h3>
-                                Algo University Coding Test
-                            </h3>
-
-                            <p>
-                                Qualified for 2nd Round.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="activity reveal">
-
-                        <span>02</span>
-
-                        <div>
-
-                            <h3>
-                                Vignan TechRTZ
-                            </h3>
-
-                            <p>
-                                Participated in the technical
-                                event for paper presentation.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="activity reveal">
-
-                        <span>03</span>
-
-                        <div>
-
-                            <h3>
-                                SUMEDHA 2026
-                            </h3>
-
-                            <p>
-                                Participated in the National Level
-                                Symposium and worked on
-                                "Traffic Signal Control for
-                                Emergency Vehicles Based on
-                                Traffic Density."
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section
-            class="section contact-section"
-            id="contact"
-        >
-
-            <div class="section-container">
-
-
-                <div class="contact-card reveal">
-
-
-                    <div class="contact-heading">
-
-                        <span class="section-label">
-                            08 — CONTACT
-                        </span>
-
-                        <h2>
-                            Let's create something
-                            meaningful.
-                        </h2>
-
-                        <p>
-
-                            I'm always interested in learning,
-                            collaborating and exploring new
-                            opportunities.
-
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="contact-links">
-
-
-                        <a
-                            href="mailto:aasrithajerripothula7@gmail.com"
-                            class="contact-link"
-                        >
-
-                            <span class="contact-icon">
-                                ✉
-                            </span>
-
-                            <div>
-
-                                <small>
-                                    EMAIL
-                                </small>
-
-                                <strong>
-                                    aasrithajerripothula7@gmail.com
-                                </strong>
-
-                            </div>
-
-                        </a>
-
-
-                        <a
-                            href="tel:7013419771"
-                            class="contact-link"
-                        >
-
-                            <span class="contact-icon">
-                                ☎
-                            </span>
-
-                            <div>
-
-                                <small>
-                                    PHONE
-                                </small>
-
-                                <strong>
-                                    7013419771
-                                </strong>
-
-                            </div>
-
-                        </a>
-
-
-                        <a
-                            href="https://www.linkedin.com/in/jerripothula-aasritha-000a74330"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="contact-link"
-                        >
-
-                            <span class="contact-icon">
-                                in
-                            </span>
-
-                            <div>
-
-                                <small>
-                                    LINKEDIN
-                                </small>
-
-                                <strong>
-                                    View LinkedIn Profile
-                                </strong>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <div class="footer-container">
-
-            <div>
-
-                <strong>
-                    JERRIPOTHULA AASRITHA
-                </strong>
-
-                <p>
-                    B.Tech — Electronics & Communication Engineering
-                </p>
-
-            </div>
-
-            <span>
-                © <span id="currentYear"></span>
-                Aasritha
-            </span>
-
+        <div class="hero-visual">
+          <div class="photo-decoration decoration-one"></div>
+          <div class="photo-decoration decoration-two"></div>
+          <div class="photo-frame">
+            <img src="resume%20photo.jpeg" alt="Portrait of Jerripothula Aasritha" class="profile-photo">
+          </div>
+          <div class="floating-card card-top"><span>✦</span> Always Learning</div>
+          <div class="floating-card card-bottom"><span>✦</span> Building Ideas</div>
         </div>
+      </div>
+      <div class="scroll-hint">SCROLL TO EXPLORE ↓</div>
+    </section>
 
-    </footer>
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+          <p>My background, interests and what drives me forward.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-intro reveal">
+            <div class="about-symbol">A<span>.</span></div>
+            <h3>Curiosity meets creativity.</h3>
+            <p>
+              I'm currently pursuing a B.Tech in Electronics and Communication
+              Engineering at Gayatri Vidya Parishad College of Engineering
+              for Women, Visakhapatnam.
+            </p>
+            <p>
+              Beyond academics, I enjoy web development, programming,
+              designing and exploring emerging technologies. I believe in
+              learning by doing and continuously improving my skills.
+            </p>
+            <a href="#contact" class="text-link">Get in touch ↗</a>
+          </div>
+          <div class="about-features reveal">
+            <article class="feature-card"><div class="feature-icon">◇</div><div><h4>Problem Solver</h4><p>I enjoy breaking complex problems into simple, practical solutions.</p></div></article>
+            <article class="feature-card"><div class="feature-icon">✳</div><div><h4>Creative Mindset</h4><p>Interested in building digital experiences that look and work well.</p></div></article>
+            <article class="feature-card"><div class="feature-icon">↗</div><div><h4>Continuous Learner</h4><p>Always looking for opportunities to gain hands-on experience.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section tinted-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MY JOURNEY</p>
+          <h2>Internship <span>Experience</span></h2>
+          <p>Learning through real projects and practical exposure.</p>
+        </div>
+        <div class="experience-list">
+          <article class="experience-card reveal">
+            <div class="experience-number">01</div>
+            <div><span class="tag">WEB DEVELOPMENT</span><h3>Full Stack Web Development Intern</h3><p class="organization">Future Interns</p><p>Developed a personal portfolio, a Mini CRM for client lead management and a Fresh Mart business website, gaining hands-on experience in frontend and backend development.</p></div>
+          </article>
+          <article class="experience-card reveal">
+            <div class="experience-number">02</div>
+            <div><span class="tag">EMBEDDED SYSTEMS</span><h3>Embedded Systems Intern</h3><p class="organization">ExcelR EdTech · APSCHE & AICTE Collaboration</p><p>Gained practical exposure to embedded systems concepts and their real-world applications.</p></div>
+          </article>
+          <article class="experience-card reveal">
+            <div class="experience-number">03</div>
+            <div><span class="tag">DIGITAL DESIGN</span><h3>Digital Circuit Design & FPGA Intern</h3><p class="organization">DeFT Semi Conductors</p><p>Worked with Verilog HDL, Xilinx Vivado and FPGA implementation concepts, including an ECG heart-rate monitoring project.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Featured <span>Projects</span></h2>
+          <p>A collection of projects where I've applied what I've learned.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-art art-one"><span class="art-label">01 / WEB DESIGN</span><div class="mock-browser"><div class="browser-dots">● ● ●</div><div class="mock-lines"><b></b><i></i><i></i></div></div></div>
+            <div class="project-body"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>Personal Portfolio</h3><p>A responsive portfolio website presenting my profile, skills, experience and projects.</p><a href="https://aasritha007.github.io/FUTURE_FS_01/" target="_blank" rel="noopener noreferrer">View Project ↗</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-art art-two"><span class="art-label">02 / WEB APPLICATION</span><div class="crm-visual"><div class="crm-bar"></div><div class="crm-row"></div><div class="crm-row short"></div><div class="crm-row"></div></div></div>
+            <div class="project-body"><div class="project-tags"><span>Web Development</span><span>CRM</span></div><h3>Mini CRM</h3><p>A client lead management system created as part of my full stack development internship.</p><a href="https://aasritha007.github.io/FUTURE_FS_02/" target="_blank" rel="noopener noreferrer">View Project ↗</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-art art-three"><span class="art-label">03 / BUSINESS WEBSITE</span><div class="mart-visual">FRESH<br><span>MART.</span><div class="mart-circles"><i></i><i></i><i></i></div></div></div>
+            <div class="project-body"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>Fresh Mart</h3><p>A modern website for a local grocery business, designed with an attractive and easy-to-navigate interface.</p><a href="https://aasritha007.github.io/FUTURE_FS_03/" target="_blank" rel="noopener noreferrer">View Project ↗</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-art art-four"><span class="art-label">04 / HARDWARE PROJECT</span><div class="pulse-visual">♡<svg viewBox="0 0 300 75" aria-hidden="true"><polyline points="0,38 75,38 95,38 110,12 125,63 142,25 156,38 300,38" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+            <div class="project-body"><div class="project-tags"><span>Verilog</span><span>FPGA</span><span>Vivado</span></div><h3>ECG Heart Rate Monitor</h3><p>An FPGA-based project exploring digital signal processing and heart-rate monitoring.</p><span class="project-note">Academic project</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section tinted-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">WHAT I KNOW</p><h2>My <span>Skills</span></h2><p>Technologies and tools I've explored through coursework and projects.</p></div>
+        <div class="skills-grid">
+          <article class="skill-box reveal"><div class="skill-icon">⌘</div><h3>Programming</h3><div class="skill-tags"><span>C</span><span>Python</span><span>JavaScript</span></div></article>
+          <article class="skill-box reveal"><div class="skill-icon">⌨</div><h3>Web Development</h3><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span></div></article>
+          <article class="skill-box reveal"><div class="skill-icon">◈</div><h3>Core Technologies</h3><div class="skill-tags"><span>Digital Electronics</span><span>Analog Circuits</span><span>Verilog HDL</span><span>FPGA</span><span>Embedded Systems</span></div></article>
+          <article class="skill-box reveal"><div class="skill-icon">⚙</div><h3>Tools</h3><div class="skill-tags"><span>GitHub</span><span>MATLAB</span><span>Xilinx Vivado</span><span>Cadence Virtuoso</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">ACADEMIC BACKGROUND</p><h2>My <span>Education</span></h2></div>
+        <div class="education-grid">
+          <article class="education-card reveal"><span class="education-year">2024 – 2028</span><h3>B.Tech in Electronics & Communication Engineering</h3><p>Gayatri Vidya Parishad College of Engineering for Women, Visakhapatnam</p><span class="education-status">Currently Pursuing</span></article>
+          <article class="education-card reveal"><span class="education-year">INTERMEDIATE</span><h3>MPC</h3><p>Deeksha Junior College</p><strong>84.9%</strong></article>
+          <article class="education-card reveal"><span class="education-year">SECONDARY SCHOOL</span><h3>SSC</h3><p>Bhashyam High School</p><strong>93.3%</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted-section" id="achievements">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">BEYOND THE CLASSROOM</p><h2>Certifications & <span>Activities</span></h2></div>
+        <div class="achievements-grid">
+          <div class="achievement-panel reveal"><h3>✦ Certifications</h3><ul><li>HCDA — Hedera</li><li>HCF — The Hashgraph Association</li><li>Embedded Systems — ExcelR / APSCHE / AICTE</li><li>Full Stack Web Development — Future Interns</li><li>Digital Circuit Design & FPGA — DeFT Semi Conductors</li></ul></div>
+          <div class="achievement-panel reveal"><h3>✦ Activities</h3><ul><li>Qualified for the second round of the Algo University Coding Test</li><li>Participated in Vignan TechRTZ paper presentation</li><li>Presented a traffic-signal control project for emergency vehicles at SUMEDHA 2026</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have an opportunity<br>or an idea? <span>Let's talk.</span></h2>
+          <p>I'm always interested in learning, collaborating and exploring new opportunities.</p>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="mailto:aasrithajerripothula7@gmail.com">Send Me an Email ↗</a>
+            <a class="btn btn-glass" href="https://www.linkedin.com/in/jerripothula-aasritha-000a74330" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+          <div class="contact-email">aasrithajerripothula7@gmail.com</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content"><a href="#home" class="logo">JA<span>.</span></a><p>Designed & built by Jerripothula Aasritha © 2026</p><a href="#home">Back to top ↑</a></div>
+  </footer>
 </body>
-
 </html>
