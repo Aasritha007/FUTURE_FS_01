@@ -7,22 +7,20 @@
 <meta name="description" content="Portfolio of Jerripothula Aasritha — ECE undergraduate specializing in VLSI, Digital Electronics, FPGA and Embedded Systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="trace-rail" aria-hidden="true"></div>
-
 <header class="nav-bar">
-  <a href="#top" class="nav-mark">JA<span class="nav-mark-dot">.</span></a>
+  <a href="#top" class="nav-mark">JA<span class="mark-blink">_</span></a>
   <nav class="nav-links" id="navLinks">
-    <a href="#about" class="nav-link">Summary</a>
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#skills" class="nav-link">Skills</a>
-    <a href="#education" class="nav-link">Education</a>
-    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#about" class="nav-link" data-ch="CH1"><span class="led"></span>SUMMARY</a>
+    <a href="#experience" class="nav-link" data-ch="CH2"><span class="led"></span>EXPERIENCE</a>
+    <a href="#projects" class="nav-link" data-ch="CH3"><span class="led"></span>PROJECTS</a>
+    <a href="#skills" class="nav-link" data-ch="CH4"><span class="led"></span>SKILLS</a>
+    <a href="#education" class="nav-link" data-ch="CH5"><span class="led"></span>EDUCATION</a>
+    <a href="#contact" class="nav-link" data-ch="CH6"><span class="led"></span>CONTACT</a>
   </nav>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -33,22 +31,28 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-grid">
+    <div class="scope-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-eyebrow">B.Tech — Electronics &amp; Communication Engineering</p>
+        <p class="term-line">$ whoami</p>
         <h1 class="hero-name">Jerripothula<br>Aasritha</h1>
-        <p class="hero-role">Building at the intersection of <span class="role-rotator" id="roleRotator">silicon</span></p>
-        <p class="hero-desc">ECE undergraduate interested in VLSI, Digital Electronics, FPGA and Embedded Systems — with practical experience in Verilog HDL, Xilinx Vivado and Cadence Virtuoso, plus a working knowledge of full stack web development.</p>
+        <p class="hero-role"><span id="typedRole"></span><span class="cursor">_</span></p>
+        <p class="hero-desc">// ECE undergraduate interested in VLSI, Digital Electronics, FPGA and Embedded Systems — practical experience with Verilog HDL, Xilinx Vivado and Cadence Virtuoso, plus a working knowledge of full stack web development.</p>
         <div class="hero-actions">
-          <a href="Template%20RESUME.jpeg" class="btn btn-primary" target="_blank" rel="noopener">View resume</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          <a href="Template%20RESUME.jpeg" class="btn btn-primary" target="_blank" rel="noopener">[ view_resume ]</a>
+          <a href="#contact" class="btn btn-ghost">[ contact_me ]</a>
         </div>
       </div>
-      <div class="hero-photo-wrap">
-        <div class="chip-frame">
-          <span class="chip-notch"></span>
-          <div class="chip-photo">
-            <img src="resume%20photo.jpeg" alt="Jerripothula Aasritha" onerror="this.parentElement.classList.add('photo-fallback')">
+      <div class="hero-scope">
+        <div class="scope-bezel">
+          <div class="scope-topbar">
+            <span class="rec-dot"></span><span>SIG: LIVE</span>
+          </div>
+          <div class="scope-screen">
+            <img src="resume%20photo.jpeg" alt="Jerripothula Aasritha" onerror="this.parentElement.parentElement.classList.add('photo-fallback')">
+          </div>
+          <div class="scope-footbar">
+            <span>CH1 · PROFILE.IMG</span>
           </div>
         </div>
         <ul class="hero-pins">
@@ -58,15 +62,12 @@
         </ul>
       </div>
     </div>
-    <svg class="waveform-divider" viewBox="0 0 1040 40" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 20 H80 V6 H140 V34 H200 H260 V20 H340 V6 H400 V34 H460 H520 V20 H600 V6 H660 V34 H720 H780 V20 H860 V6 H920 V34 H980 H1040" />
-    </svg>
   </section>
 
   <!-- SUMMARY -->
   <section class="section" id="about">
     <div class="section-head">
-      <span class="section-tag">01 · Summary</span>
+      <span class="section-tag">CH1 // SUMMARY</span>
       <h2>Profile</h2>
     </div>
     <p class="summary-text">ECE undergraduate interested in VLSI, Digital Electronics, FPGA and Embedded Systems, with practical experience in Verilog HDL, Xilinx Vivado and Cadence Virtuoso. Experienced in digital circuit design, FPGA implementation and basic web development through internships and projects.</p>
@@ -82,8 +83,8 @@
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
     <div class="section-head">
-      <span class="section-tag">02 · Experience</span>
-      <h2>Internship experience</h2>
+      <span class="section-tag">CH2 // EXPERIENCE</span>
+      <h2>Internship log</h2>
     </div>
     <ol class="timeline">
       <li class="timeline-item">
@@ -116,15 +117,16 @@
   <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="section-head">
-      <span class="section-tag">03 · Projects</span>
-      <h2>Selected projects</h2>
+      <span class="section-tag">CH3 // PROJECTS</span>
+      <h2>Test bench</h2>
     </div>
     <div class="project-grid">
       <article class="project-card">
         <div class="project-card-top">
-          <h3>FPGA-Based ECG Heart Rate Monitor</h3>
-          <span class="project-tag">Hardware</span>
+          <span class="dut-id">DUT-01</span>
+          <span class="project-tag">MODULE: HW</span>
         </div>
+        <h3>FPGA-Based ECG Heart Rate Monitor</h3>
         <p>An ECG heart-rate monitoring system with 7-segment display output, designed and verified through simulation.</p>
         <ul class="project-stack">
           <li>Verilog HDL</li>
@@ -134,9 +136,10 @@
       </article>
       <article class="project-card">
         <div class="project-card-top">
-          <h3>Web Development Projects</h3>
-          <span class="project-tag">Software</span>
+          <span class="dut-id">DUT-02</span>
+          <span class="project-tag">MODULE: SW</span>
         </div>
+        <h3>Web Development Projects</h3>
         <p>A personal portfolio, a Mini CRM client/lead management system, and a Fresh Mart local business website.</p>
         <ul class="project-stack">
           <li>HTML</li>
@@ -151,31 +154,31 @@
   <!-- SKILLS -->
   <section class="section" id="skills">
     <div class="section-head">
-      <span class="section-tag">04 · Skills</span>
-      <h2>Toolkit</h2>
+      <span class="section-tag">CH4 // SKILLS</span>
+      <h2>Channel list</h2>
     </div>
     <div class="skills-panel">
       <div class="skills-col">
         <h3>Core skills</h3>
         <ul class="skill-list">
-          <li>Digital Electronics</li>
-          <li>Analog Circuits</li>
-          <li>CMOS &amp; VLSI</li>
-          <li>Verilog HDL</li>
-          <li>FPGA / Vivado</li>
-          <li>Cadence Virtuoso</li>
-          <li>C &amp; Python</li>
-          <li>HTML, CSS, Node.js</li>
+          <li><span class="led sm"></span>Digital Electronics</li>
+          <li><span class="led sm"></span>Analog Circuits</li>
+          <li><span class="led sm"></span>CMOS &amp; VLSI</li>
+          <li><span class="led sm"></span>Verilog HDL</li>
+          <li><span class="led sm"></span>FPGA / Vivado</li>
+          <li><span class="led sm"></span>Cadence Virtuoso</li>
+          <li><span class="led sm"></span>C &amp; Python</li>
+          <li><span class="led sm"></span>HTML, CSS, Node.js</li>
         </ul>
       </div>
       <div class="skills-col">
         <h3>Strengths</h3>
         <ul class="skill-list">
-          <li>Problem Solving</li>
-          <li>Quick Learning</li>
-          <li>Teamwork</li>
-          <li>Creativity</li>
-          <li>Technical Curiosity</li>
+          <li><span class="led sm amber"></span>Problem Solving</li>
+          <li><span class="led sm amber"></span>Quick Learning</li>
+          <li><span class="led sm amber"></span>Teamwork</li>
+          <li><span class="led sm amber"></span>Creativity</li>
+          <li><span class="led sm amber"></span>Technical Curiosity</li>
         </ul>
       </div>
     </div>
@@ -184,8 +187,8 @@
   <!-- EDUCATION -->
   <section class="section" id="education">
     <div class="section-head">
-      <span class="section-tag">05 · Education</span>
-      <h2>Education &amp; certifications</h2>
+      <span class="section-tag">CH5 // EDUCATION</span>
+      <h2>Records</h2>
     </div>
     <table class="edu-table">
       <tbody>
@@ -197,7 +200,7 @@
           </td>
         </tr>
         <tr>
-          <td class="edu-year">Intermediate</td>
+          <td class="edu-year">Inter</td>
           <td>
             <strong>MPC</strong>
             <span>Deeksha Junior College · 84.9%</span>
@@ -213,7 +216,7 @@
       </tbody>
     </table>
 
-    <h3 class="subheading">Certifications &amp; training</h3>
+    <h3 class="subheading">// Certifications &amp; training</h3>
     <ul class="cert-list">
       <li>HCDA — Hedera</li>
       <li>HCF — The Hashgraph Association</li>
@@ -222,7 +225,7 @@
       <li>Digital Circuit Design &amp; FPGA Implementation — DefT Semi Conductors</li>
     </ul>
 
-    <h3 class="subheading">Achievements &amp; activities</h3>
+    <h3 class="subheading">// Achievements &amp; activities</h3>
     <ul class="cert-list">
       <li>Algo University Coding Test — qualified for 2nd round</li>
       <li>Vignan TechRTZ — participated in the technical event for paper presentation</li>
@@ -233,21 +236,21 @@
   <!-- CONTACT -->
   <section class="section contact-section" id="contact">
     <div class="section-head">
-      <span class="section-tag">06 · Contact</span>
-      <h2>Let's connect</h2>
+      <span class="section-tag">CH6 // CONTACT</span>
+      <h2>Open a connection</h2>
     </div>
     <p class="contact-lead">Open to internships and roles in VLSI, digital IC design, FPGA and embedded systems.</p>
     <div class="contact-grid">
       <a class="contact-card" href="tel:+917013419771">
-        <span class="contact-label">Phone</span>
+        <span class="contact-label">$ call --phone</span>
         <span class="contact-value">+91 70134 19771</span>
       </a>
       <a class="contact-card" href="mailto:aasrithajerripothula7@gmail.com">
-        <span class="contact-label">Email</span>
+        <span class="contact-label">$ send --mail</span>
         <span class="contact-value">aasrithajerripothula7@gmail.com</span>
       </a>
       <a class="contact-card" href="https://linkedin.com/in/jerripothula-aasritha-000a74330" target="_blank" rel="noopener">
-        <span class="contact-label">LinkedIn</span>
+        <span class="contact-label">$ open --linkedin</span>
         <span class="contact-value">/in/jerripothula-aasritha</span>
       </a>
     </div>
@@ -256,7 +259,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>© <span id="year"></span> Jerripothula Aasritha. Built with HTML, CSS &amp; JavaScript.</p>
+  <p>&gt; process exited (0) — © <span id="year"></span> Jerripothula Aasritha</p>
 </footer>
 
 <script src="script.js"></script>
