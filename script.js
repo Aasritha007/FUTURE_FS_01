@@ -14,7 +14,7 @@ navLinks.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
-// Highlight the nav link matching the section in view
+// Highlight the active nav "channel" as sections scroll into view
 const sections = document.querySelectorAll('main .section, .hero');
 const navItems = document.querySelectorAll('.nav-link');
 
@@ -23,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const id = entry.target.getAttribute('id');
       navItems.forEach(link => {
-        link.style.color = link.getAttribute('href') === `#${id}` ? 'var(--accent-sage)' : '';
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
       });
     }
   });
@@ -31,21 +31,25 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// Hero role rotator — one orchestrated moment on load
-const roles = ['silicon', 'circuits', 'firmware', 'the web'];
-const rotatorEl = document.getElementById('roleRotator');
-let roleIndex = 0;
+// One-time boot-sequence typing for the hero role line
+const roleText = 'ECE Undergrad // VLSI · FPGA · Embedded · Web';
+const typedEl = document.getElementById('typedRole');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-if (rotatorEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  setInterval(() => {
-    roleIndex = (roleIndex + 1) % roles.length;
-    rotatorEl.style.opacity = '0';
-    setTimeout(() => {
-      rotatorEl.textContent = roles[roleIndex];
-      rotatorEl.style.opacity = '1';
-    }, 250);
-  }, 2400);
-  rotatorEl.style.transition = 'opacity 0.25s ease';
+if (typedEl) {
+  if (reduceMotion) {
+    typedEl.textContent = roleText;
+  } else {
+    let i = 0;
+    const type = () => {
+      if (i <= roleText.length) {
+        typedEl.textContent = roleText.slice(0, i);
+        i++;
+        setTimeout(type, 28);
+      }
+    };
+    type();
+  }
 }
 
 // Footer year
